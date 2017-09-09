@@ -1087,10 +1087,10 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
- int64 nSubsidy = 1 * COIN;
+ int64 nSubsidy = 5 * COIN;
 if(nHeight == 1)   
 		{ 
-			nSubsidy = 35000000 * COIN; 
+			nSubsidy = 1000000000 * COIN; 
 		}
 
     return nSubsidy + nFees;
