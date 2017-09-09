@@ -50,10 +50,10 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file):
 
   HiddenServiceDir /var/lib/tor/hamstercoin-service/
-  HiddenServicePort 41158 127.0.0.1:41158
+  HiddenServicePort 41156 127.0.0.1:41156
 
 The directory can be different of course, but (both) port numbers should be equal to
-your hamstercoind's P2P listen port (41158 by default).
+your hamstercoind's P2P listen port (41156 by default).
 
 -externalip=X   You can tell hamstercoin about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
@@ -83,7 +83,7 @@ specify:
 
   ./hamstercoind ... -discover
 
-and open port 41158 on your firewall (or use -upnp).
+and open port 41156 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
